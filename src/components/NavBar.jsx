@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoMdArrowDropdown } from "react-icons/io";
-import image1 from './assets/image1.jpeg';
-import image2 from './assets/image2.jpeg';
+import image1 from '../assets/image1.jpeg';
+import image2 from '../assets/image2.jpeg';
 import { CgProfile } from "react-icons/cg";
 import { LiaCopyrightSolid } from "react-icons/lia";
 
@@ -35,7 +35,7 @@ const NavBar = () => {
               </span>
             </Link>
             {/* DROPDOWN */}
-            <div className="absolute left-0 mt-2 hidden w-[150px] rounded-md bg-gray-100 shadow-md p-2 text-black group-hover:block">
+            <div className="absolute z-10 left-0 mt-2 hidden w-[150px] rounded-md bg-gray-100 shadow-md p-2 text-black group-hover:block">
               <Link className="block px-4 py-2 hover:bg-violet-300">Services</Link>
               <Link className="block px-4 py-2 hover:bg-violet-300">About</Link>
               <Link className="block px-4 py-2 hover:bg-violet-300">Privacy Policy</Link>
@@ -127,8 +127,8 @@ const NavBar = () => {
       <div
         className={
           nav
-            ? "fixed top-0 left-0 h-screen justify-between items-start w-[75%] flex-col bg-[#002147]    flex z-10 duration-300"
-            : "fixed top-0 left-[-100%] w-[75%] bg-[#002147] z-10 duration-300"
+            ? "fixed top-0 left-0 h-screen justify-between items-start w-[75%] flex-col bg-[#002147]  flex z-10 duration-300"
+            : "fixed top-0 left-[-100%] h-screen w-[75%] bg-[#002147] z-10 duration-300"
         }
       >
         <AiOutlineClose
