@@ -16,7 +16,7 @@ const NavBar = () => {
         {/* LOGO */}
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-orange-300">
-            PHIL<span className="text-white">HUB</span>
+            PHIL<span className="text-white class">HUB</span>
           </h1>
         </div>
 

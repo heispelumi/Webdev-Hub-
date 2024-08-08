@@ -1,22 +1,25 @@
-import React from 'react'
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import Banner from './components/Banner'
+
+
+import React from 'react';
+import NavBar from './components/NavBar';
+import Blog from './components/Blog';
+import Hero from './components/Hero';
+import Banner from './components/Banner';
+import Banner2 from './components/Banner2';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
-  
-  <NavBar/>
-  <Hero/>
-  <Banner/>
+    <>
+      <NavBar />
+      <Hero />
+      <Banner />
+      <Banner2 />
+      <Blog />
+      <Footer />
+    </>
+  );
+};
 
-
-
-    </div>
-  )
-}
-
-export default App
-
+export default App;
 
